@@ -1,0 +1,303 @@
+body {
+    font-family: Calibri;
+}
+
+.container {
+    width: 80%;
+    align-content: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.row {
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: .5rem;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    width: 20%;
+    margin: 1rem;
+    float: left;
+}
+
+.card-header {
+    position: relative;
+}
+
+.user {
+    display: inline-block;
+    width: 100%;
+}
+
+.user-info {
+    color: #666666;
+    float: left;
+    margin-left: .5rem;
+    text-align: left;
+}
+
+.instagram-logo {
+    float: right;
+    position: relative;
+    padding: 3px;
+    top: -2.5rem;
+    width: 25px;
+    height: 25px;
+}
+
+
+.user img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    float: left;
+}
+
+.card-body {
+    margin-top: 1px;
+    width: 100%;
+}
+
+.card-image {
+    margin-top: -20px;
+    height: 225px;
+    width: 100%;
+}
+.card-text {
+    text-align: left;
+    padding: 1rem;
+    height: 80px;
+}
+
+.card-line {
+    width: 90%;
+    margin-top: 2.5rem;
+    border: lightgrey solid 0.2px;
+}
+
+.card-footer {
+    padding: 1rem;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.card-footer img {
+    position: relative;
+    float: left;
+}
+
+.likes {
+    margin-left: .3rem;
+    position: relative;
+    float: left;
+}
+
+.liked {
+    filter: invert(70%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+}
+
+.load-more {
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+    background-color: #1d6dec;
+    color: white;
+    border-radius: 25px;
+    border: none;
+}
+
+.load-more:hover {
+    background-color: lightgrey;
+}
+
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal-container.show{
+    opacity: 1;
+    pointer-events: auto;
+}
+.view{
+    position: relative;
+    float: right;
+    height: 30px;
+    width: 100px;
+    font-size: 14px;
+    margin-top: -.5rem;
+    border: none;
+    background-color: #1d6dec;
+    color: white;
+    border-radius: 20px;
+}
+
+.view:hover {
+    background-color: lightgrey;
+}
+.close{
+    position: relative;
+    float: right;
+    height: 30px;
+    width: 100px;
+    font-size: 14px;
+    border: none;
+    background-color: #1d6dec;
+    color: white;
+    border-radius: 20px;
+}
+
+.close:hover{
+    background-color: lightgrey;
+}
+
+.modal {
+    background-color: white;
+    position: relative;
+    top: 10%;
+    width: 60%;
+    height: 70%;
+    margin: auto;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);;
+}
+
+.modal-image {
+    width: 50%;
+}
+
+.modal-image img {
+    float: left;
+    height:560px;
+    width: 100%;
+}
+
+.modal-info {
+    width: 40%;
+    position: relative;
+    float: right;
+
+}
+
+.modal-user {
+    width: 100%;
+    position: relative;
+    float: left;
+    margin-left: -6rem;
+    top: 1rem;
+}
+
+.modal-user img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    float: left;
+}
+
+.modal-user h3 {
+    float: left;
+    position: absolute;
+    margin-top: -3px;
+    margin-left: 3rem;
+}
+
+.modal-user p {
+    position: relative;
+    float: left;
+    margin-left: .5rem;
+}
+
+.modal-line {
+    position: relative;
+    float: left;
+    margin-left: -6rem;
+    width: 120%;
+    margin-top: 1rem;
+}
+
+.modal-text {
+    position: relative;
+    float: left;
+    margin-left: -6rem;
+    text-align: left;
+    padding: .5rem;
+}
+
+.modal-likes {
+    width: 100%;
+    position: relative;
+    float: left;
+    margin-left: -5.8rem;
+    margin-top: 1rem;
+}
+
+.modal-likes img {
+    position: relative;
+    float: left;
+}
+
+.modal-likes p {
+    position: relative;
+    float: left;
+    margin-top: -.1rem;
+    margin-left: .2rem;
+
+}
+
+.intagram-modal {
+    position: relative;
+    float: right;
+    top: 1rem;
+    right: 1rem;
+    width: 30px;
+}
+
+@media screen and (max-width: 1310px) {
+
+    .card {
+        width: 40%;
+    }
+
+    .user img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .modal-image img{
+        width: 80%;
+        height: 340px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .card {
+        width: 90%;
+    }
+
+    .card-text {
+        height: auto;
+    }
+
+    .modal-container.show {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .view {
+        opacity: 0;
+        pointer-events: none;
+    }
+}
