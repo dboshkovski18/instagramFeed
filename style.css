@@ -156,6 +156,7 @@ body {
     text-align: center;
     border: none;
     color: white;
+    cursor: pointer;
 }
 
 .close:hover{
