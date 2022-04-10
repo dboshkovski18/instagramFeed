@@ -109,7 +109,7 @@ let openPost = function (i) {
                 <img src="heart.svg" id="heart-modal-${i}" class="${classes}" onclick="likeAPost(${i})"/>
                 <p id="modal-${i}" >${posts[i].likes}</p>
             </div>
-            <button class="close" type="button" onclick="closePost()">Close</button>
+            
         </div>`
 
     document.getElementById("render_modal").innerHTML = modal;
